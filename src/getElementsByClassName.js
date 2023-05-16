@@ -6,11 +6,10 @@
 // But instead we're going to implement it from scratch:
 var getElementsByClassName = function(className, root = document.body
 ) {
-  console.log(root);
   var elements = [];
 
   // base case
-  if (root.className && root.contains(className)) {
+  if (root.className && root.classList.contains(className)) {
     elements.push(root);
   }
 
